@@ -49,10 +49,9 @@ p{
     display: inline-block;
     color: white;
     background: goldenrod;
-    padding: 0.5rem 0.2rem;
+    padding: 1rem 1rem;
     border: none;
     border-radius: 5px;
-    margin: 0 52rem;
 }
 .btn:hover{
     background: gold;
@@ -61,10 +60,32 @@ p{
     background: #333333;
     color: white;
 }
+.bg-light{
+    background: whitesmoke;
+    color: #333333;
+}
+.bg-dark{
+    background: #333333;
+    color: whitesmoke;
+}
 
-.py-1{ padding: 1.5rem 0; }
+.py-1{ padding: 1rem 0; }
 .py-2{ padding: 2rem 0; }
 .py-3{ padding: 3rem 0; }
+
+.p1{ padding: 1.5rem; }
+.p2{ padding: 2rem; }
+.p3{ padding: 3rem; }
+
+.list{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
 
 /*Navbar*/
 #navbar{
@@ -106,7 +127,7 @@ p{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    align-content: center;
+    align-items: center;
     height: 100%;
     padding: 0 2rem;
     position: absolute;
@@ -138,4 +159,28 @@ p{
 }
 #what .items .item p{
     margin-top: 1rem;
+}
+
+/* Section: Who We Are */
+
+#who{
+    display: flex;
+}
+
+#who div{
+    flex: 1;
+}
+
+#who .who-img{
+    background: url("../img/people.jpg") no-repeat center center/cover;
+}
+
+/*Clients*/
+#clients .items{
+    display: flex;
+}
+#clients .items img{
+    display: block;
+    margin: auto;
+    width: 60%;
 }
