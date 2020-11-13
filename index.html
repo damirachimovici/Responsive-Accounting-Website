@@ -15,10 +15,10 @@
             <span class="text-primary"><i class="fas fa-building" ></i> Our </span>Business
         </h1>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">What</a></li>
-            <li><a href="">Who</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#what">What</a></li>
+            <li><a href="#who">Who</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <header id="showcase">
@@ -89,6 +89,38 @@
             </div>
         </div>
     </section>
+    <section id="contact">
+        <div class="contact-form bg-primary p2">
+            <h2 class="m-heading">Contact us</h2>
+            <p>Please use the form below to contact us</p>
+            <form class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Name">
+            </form>
+            <form class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter Email">
+            </form>
+            <form class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone" placeholder="Enter Phone">
+            </form>
+            <form class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+            </form>
+            <input type="submit" value="Send" class="btn btn-dark">
+        </div>
+        <div class="map"></div>
+    </section>
+    <footer id="main-footer" class="bg-dark text-center py-1">
+        <div id="container">
+            <p>Copyright &copy;, 2020 OurBusiness, All rights reserved </p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV0tfp4oZmD42lGLz9So9s-QdM78guz2A&callback=initMap"
+    asymc defer></script>
 
 </body>
 </html>
