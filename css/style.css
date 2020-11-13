@@ -6,6 +6,7 @@
 
 body{
     font-family: "Noto Sans JP";
+    line-height: 1.4;
 }
 a {
     text-decoration: none;
@@ -17,6 +18,33 @@ p{
 /*Utility*/
 .text-primary{
     color: goldenrod ;
+}
+
+.l-heading{
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.lead{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    color: white;
+    background: goldenrod;
+    padding: 0.5rem 0.2rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0 52rem;
+}
+.btn:hover{
+    background: gold;
+}
+.btn-dark{
+    background: #333333;
+    color: white;
 }
 
 /*Navbar*/
@@ -44,4 +72,26 @@ p{
 #navbar ul li a:hover{
     background: goldenrod;
     border-radius: 5x;
+
+/*Showcase*/
+
+}
+#showcase{
+    background: #333 url("../img/showcase.jpg") no-repeat center/cover;
+    height: 100vh;
+    color: white;
+}
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    height: 100%;
+    padding: 0 2rem;
+    position: absolute;
+    top:60px;
+    left:0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0,4);
 }
